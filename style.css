@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: rgba(0, 0, 225, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 100;
+    transition: .3s
+}
+
+.header .sticky {
+    background: yellowgreen;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 500;
+    margin-left: 3rem;
+}
+
+.navbar a:hover {
+    color: grey;
+}
+
+nav a:nth-of-type(5) {
+    background-color: rgba(225, 225, 225, 0.4);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* section {
+    min-height: 100vh;
+} */
+
+.hero-image {
+    min-height: 100vh;
+    background-image: url(images/image-header.jpg);
+    height: 90%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    padding: 10rem 9% 2rem;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.hero-text h1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    padding: 25px;
+    color: #ffffff;
+}
+
+.hero-text i {
+    color: #ffffff;
+    font-size: 20rem;
+    font-weight: 200;
+    padding-bottom: 15rem;
+    color: #ffffff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;    
+}
+
+.container .text {
+    color: #292e33;
+    /* padding-left: 5rem;
+    padding-top: 5rem; */
+    /* align-content: center; */
+}
+
+.container .text h2 {
+    margin: 3.5rem;
+    font-size: 3rem;
+    text-align: center;
+    
+}
+
+.container .text p {
+    font-size: 1.5rem;
+    margin: 3.5rem;
+}
+
+.hero-btn{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333333;
+    text-decoration: none;
+    position: relative;
+    font-size: 1.7rem;
+    margin: 3.5rem;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.hero-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 10px;
+    background-color: rgba(250, 212, 0, 0.3);
+    z-index: -1;
+    transition: height 0.3s ease;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.text.hero-btn {
+    align-content: center;
+}
+
+.images  img {
+    width: 100%;
+    height: auto;
+}
+
+.images-1 {
+    position: relative;
+    text-align: center;
+    color: #000000;
+}
+
+.images-1 img {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
+.text-1 {
+    position: absolute;
+    top: 60%;
+    justify-content: center;
+}
+
+.text-1 h2 {
+    font-size: 2rem;
+}
+
+.text-1 p {
+    margin: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+/* testomoines css */
+
+.section-testimonies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2rem;
+}
+
+.main-text {
+    padding: 50px;
+}
+
+.main-text h2 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1.7rem;
+}
+
+.section-testimonies .testimonies-box {
+    flex: 1 1 18rem;
+    padding: 2rem 1rem 2rem;
+    text-align: center;
+}
+
+.testimonies-box img {
+    border-radius: 50%;
+}
+
+.testimonies-box p {
+    color: #000000;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    margin: .5rem 0 1.5rem 0;
+    font-size: 1.7rem;
+}
+
+.testimonies-box h6 {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1.7rem;
+}
+
+
+.testimonies-box h3 {
+    color: #000000;
+    font-size: 1.7rem;
+}
+
+/* .gallery css */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px,1fr));
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/* footer css */
+#footer {
+    background: rgba(0, 128, 0, 0.6);
+}
+
+.main-texts h2 {
+    color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.7rem;
+}
+
+.fillter-buttons {
+    text-align: center;
+    margin: 2rem;
+}
+
+.fillter-buttons .btn {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .4px;
+    margin-left: 1.3rem;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.fillter-buttons .btn:hover {
+    color: #ffffff;
+}
+
+.social-icons {
+    text-align: center;
+    padding: 25px;
+    justify-content: space-between;
+    letter-spacing: 20px;
+}
+
+.social-icons a {
+    color: rgba(0, 0, 0, 0.4);
+    width: 50px;
+    height: 100;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
+
+/* BREAKPOINTS */
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 4%;
+    }
+
+    /* section {
+        padding: 10rem 4% 2rem;
+    } */
+
+    /* .hero-image {
+        padding: 0 4%;
+    } */
+
+    /* #footer {
+        padding: 2rem 4%;
+    } */
+}
+
+@media (max-width: 720px) {
+    .header {
+        background: rgba(0, 0, 225, 0.2);
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: #ffffff;
+        transition: .25s ease;
+        transition-delay: .25s;
+    }
+
+    .navbar.active {
+        transition-delay: 0s;
+        left: 0;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: black;
+        transform: translateX(-20rem);
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active a {
+        transform: translateX(0);
+        transition-delay: .25s;
+    }
+
+    nav a:nth-of-type(5) {
+        background: yellow;
+        border-radius: 50px;
+        /* padding: 20px; */
+        width: 25%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 720px) {
+    html {
+        font-size: 50%;
+    }
+
+    .container {
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    .container.text h2 {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .container .text p {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .hero-btn {
+        align-content: center;
+    }
+
+    .hero-btn::after {
+        align-content: center;
+    }
+
+    .images-1 {
+        width: 400;
+        justify-content: center;
+    }
+
+    .section-testimonies {
+        flex-direction: column;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
